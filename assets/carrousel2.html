@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smooth Infinite Logo Carousel</title>
+
+<style>
+:root {
+  --gap: 25px; 
+}
+
+html, body {
+  height: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+.carousel-wrap {
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+  border-radius: 12px;
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+  animation: scroll 35s linear infinite; /* adjust speed here */
+}
+
+/* control speed: 15s = normal | smaller = faster | bigger = slower */
+@keyframes scroll {
+  0% { transform: translateX(10%); }
+  100% { transform: translateX(-495%); }
+}
+
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px; 
+  height: 100px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+  filter: grayscale(0.3); 
+  transition: filter .3s ease;
+}
+
+.item img:hover {
+  filter: grayscale(0);
+}
+
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width:768px){
+  .item { width: 140px; height: 80px; }
+}
+@media (max-width:576px){
+  .item { width: 120px; height: 70px; }
+}
+</style>
+</head>
+
+<body>
+<div class="carousel-wrap">
+  <div class="track" id="track"></div>
+</div>
+
+<script>
+// your logo files (local or online)
+const images = [
+'../img_c/lb.png',
+'../img_c/lbssn.png',
+'../img_c/li.png',
+'../img_c/lk.png',
+'../img_c/lk.jpeg',
+'../img_c/lkjg.png',
+'../img_c/lma.png',
+'../img_c/lp.png'
+];
+
+const track = document.getElementById('track');
+
+// Duplicate set for infinite effect
+function build(arr) {
+  arr.forEach((src, i) => {
+    const item = document.createElement('div');
+    item.className = 'item';
+    item.innerHTML = `<img src="${src}" alt="logo-${i}">`;
+    track.appendChild(item);
+  });
+}
+
+build(images);
+build(images); // duplicate for smooth looping
+</script>
+</body>
+</html>

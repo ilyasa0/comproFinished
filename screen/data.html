@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Center Management</title>
+ <link rel="icon" type="image/png" href="../e.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<style>
+    body {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-md">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../e.png" class="img-fluid" alt="Logo" style="height:60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item"><a class="nav-link"data-lang="home"   href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-lang="about" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" data-lang="works" href="works.html">Our Works</a></li>
+            <li class="nav-item me-3"><a class="nav-link"data-lang="contact"href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="d-flex gap-2">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            🌐 Language
+        </a>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item" onclick="setLang('en')">English</button></li>
+    <li><button class="dropdown-item" onclick="setLang('id')">Indonesia</button></li>
+  </ul>
+</li>
+      </div>
+      </div>
+    </nav>
+  </header>
+<section class="py-5">
+  <div class="container" style="margin-top: 80px;">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="../img/datacenter/td.png" class="img-fluid rounded" alt="Overview">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold">Data Center Management</h2>
+        <p class="text-muted" data-lang="cdm">
+          We can offer to maintenance infrastructure encompasses all systems,
+             devices, and procedures designed to maintain the availability, reliability,
+              and security of data center operations. The goal is to ensure that all IT 
+              services and systems stored or operated within the data center operate optimally 
+              and without interruption
+        </p>
+        <ul>
+          <li data-lang="sf1"> High security and reliability</li> 
+          <li data-lang="sf2"> Customizable and scalable</li>
+          <li data-lang="sf3"> Improves efficiency and productivity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-lang="ow">Our Works </h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="../img/datacenter/d1.png" class="img-fluid rounded shadow-sm" alt="Screenshot 1">
+        <p>Pemeliharaan infrastructure,<br> Komdigi</p>
+      </div>
+      <div class="col-md-4">
+        <img src="../img/datacenter/d2.png" class="img-fluid rounded shadow-sm" alt="Screenshot 2">
+        <p>Pemeliharaan infrastructure, <br> Komdigi</p>
+      </div>
+      <div class="col-md-4">
+        <img src="../img/datacenter/d3.png" class="img-fluid rounded shadow-sm" alt="Screenshot 3">
+        <p>Pemeliharaan infrastructure, <br> Komdigi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-lang="key">Key Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <p data-lang="dc1"><b>New Data Center Project</b> <br>Made new a app data center to help improve business efficiency, security, and productivity. Combining 
+             innovation, high performance</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <p data-lang="dc2"><b>Add New Features</b> <br>>we can provide a new feature to yours data center project</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-light rounded shadow-sm h-100">
+          <p data-lang="dc3"><b>Maintenance</b> <br>
+            maintenance infrastructure encompasses all systems, devices,
+             and procedures designed to maintain the availability, reliability, and security of
+              data center operations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3" data-lang="int">Interested in our services ?</h2>
+    <p data-lang="ctc">Contact our team to learn how we can help your business grow.</p>
+    <a href="../screen/contact.html" class="btn btn-primary" data-lang="git">Get in Touch</a>
+  </div>
+</section>
+
+<footer class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 col-md-6 mb-2 d-flex align-items-center">
+          <div>
+            <p class="mb-1 small" data-lang="i1">Menjadi perusahaan yang Profesional dan Terkemuka guna menyediakan Barang dan Jasa
+              di Indonesia.</p>
+            <p class="small text-muted mb-0" data-lang="i2">© Copyright 2025. Design by Pt. E-nerkom</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-2">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-inline text-uppercase mb-0">
+            <li class="list-inline-item me-3"><a href="../index.html" data-lang="home" class="text-dark">Home</a></li>
+            <li class="list-inline-item me-3"><a href="aboutus.html" data-lang="about" class="text-dark">About</a></li>
+            <li class="list-inline-item me-3"><a href="works.html" data-lang="works" class="text-dark">Our Works</a></li>
+
+            <li class="list-inline-item"><a href="contact.html" data-lang="contact" class="text-dark">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/lange.js"></script>
+
+
+</body>
+</html>
