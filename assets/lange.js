@@ -15,7 +15,7 @@ const translations = {
 
     // index page
 
-    welcome:"Welcome to E-nerkom",
+    welcome:"Welcome to <br> PT.E-nerkom",
     welcometext:"Your one-stop solution for all your needs.",
     client:"Our <br> Client",
     partner:"Our <br> Partner",
@@ -104,10 +104,11 @@ const translations = {
     about:"Tentang Kami",
     works:"Project",
     contact:"Kontak Kami",  
+   language:"Bahasa",
 
     // index page
 
-    welcome:"Selamat Datang Di E-nerkom",
+    welcome:"Selamat Datang Di <br> PT.E-nerkom",
     welcometext:"Solusi lengkap untuk semua kebutuhan Anda.",
     client:"klient <br> Kami",
     partner:"Mitra <br> Kami",
